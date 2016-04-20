@@ -1,0 +1,18 @@
+{
+  "name": "com-xinyan-deploy",
+  "version": "0.1.0",
+  "description": "Deploy Plugin",
+  "cordova": {
+    "id": "com-xinyan-deploy",
+    "platforms": [
+      "android"
+    ]
+  },
+
+  "keywords": [
+    "deploy",
+    "cordova-android"
+  ],
+  "author": "Jianye Xu",
+  "license": "MIT"
+}

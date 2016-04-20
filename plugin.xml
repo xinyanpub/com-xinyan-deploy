@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com-xinyan-deploy"
+    version="0.1.0">
+    <name>IonicDeploy</name>
+    <description>Ionic Deploy Plugin</description>
+    <license>MIT</license>
+    <keywords>deploy</keywords>
+    <repo>https://github.com/driftyco/ionic-plugin-deploy</repo>
+
+    <js-module src="www/deploy.js" name="Deploy">
+        <clobbers target="window.XinyanDeploy" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Deploy">
+                <param name="android-package" value="com.xinyan.Deploy"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Deploy.java" target-dir="src/com/xinyan" />
+    </platform>
+</plugin>
