@@ -3,11 +3,10 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="com-xinyan-deploy"
     version="0.1.0">
-    <name>IonicDeploy</name>
-    <description>Ionic Deploy Plugin</description>
+    <name>Deploy</name>
+    <description>Deploy Plugin</description>
     <license>MIT</license>
     <keywords>deploy</keywords>
-    <repo>https://github.com/driftyco/ionic-plugin-deploy</repo>
 
     <js-module src="www/deploy.js" name="Deploy">
         <clobbers target="window.XinyanDeploy" />
