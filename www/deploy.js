@@ -1,9 +1,9 @@
-var IonicDeploy = {
+var Deploy = {
   download: function(url, success, failure) {
   	cordova.exec(
   		success,
   		failure,
-  		'IonicDeploy',
+  		'Deploy',
   		'download',
   		[url]
   	);
@@ -12,11 +12,11 @@ var IonicDeploy = {
     cordova.exec(
       success,
       failure,
-      'IonicDeploy',
+      'Deploy',
       'setup',
       [url]
     );
   }
 }
 
-module.exports = IonicDeploy;
+module.exports = Deploy;
