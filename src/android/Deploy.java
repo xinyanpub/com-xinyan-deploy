@@ -102,6 +102,7 @@ public class Deploy extends CordovaPlugin {
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setDataAndType(Uri.fromFile(file),
                     "application/vnd.android.package-archive");
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             this.cordova.getActivity().startActivity(intent);
             callbackContext.success("done");
             logMessage("setup", "Done");
@@ -109,7 +110,7 @@ public class Deploy extends CordovaPlugin {
     }
 
     private void logMessage(String tag, String message) {
-        if (true) {
+        if (false) {
             Log.i("Xinyan.DEPLOY." + tag, message);
         }
     }
